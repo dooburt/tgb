@@ -1,0 +1,116 @@
+.hamburger {
+  position: fixed;
+  z-index: 303;
+  margin: 0.5rem;
+  top: 0;
+  left: 0;
+  width: 57px;
+  height: 48px;
+}
+.hamburger button {
+  background-color: transparent;
+}
+.hamburger__shade {
+  position: fixed;
+  width: 80%;
+  top: 0;
+  left: -80%;
+  height: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  z-index: 302;
+  background: rgba(2, 6, 23, 0.9);
+  transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  /* max-width: 320px; */
+}
+.hamburger__shade.opened {
+  left: 0;
+}
+.hamburger__shade .animated-logo {
+  width: 226px;
+  margin: 8rem auto 4rem;
+  transform: scale(1.25);
+  z-index: 303;
+  height: 60px;
+}
+.hamburger__menu-container {
+  margin-top: 5rem;
+}
+.hamburger__menu-container .hamburger__items {
+  list-style: none;
+  padding-left: 0;
+}
+.hamburger__icon {
+  display: inline-block;
+  width: 25px;
+  position: relative;
+  top: 5px;
+  margin-right: 1rem;
+}
+.hamburger__text {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #ec4899;
+  border-bottom: solid 2px transparent;
+}
+.hamburger__text:hover,
+.hamburger__text:active {
+  color: #7e22ce;
+  border-bottom: solid 2px #7e22ce;
+}
+.hamburger__item {
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+}
+.hamburger__item.selected {
+  border-left: solid 5px #ec4899;
+  padding-left: calc(2rem - 5px);
+  background-color: rgba(0, 0, 0, 0.02);
+}
+.hamburger .line {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hamburger .line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.hamburger .line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.hamburger .line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.hamburger .opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+  stroke: #fff;
+}
+.hamburger .opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+  stroke: #fff;
+}
+.hamburger .opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+  stroke: #fff;
+}
+@keyframes explode {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.ios .hamburger {
+  margin-top: 3rem;
+}
