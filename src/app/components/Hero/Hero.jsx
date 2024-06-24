@@ -74,7 +74,7 @@ const Hero = () => {
                   We&apos;re {!pack.active ? renderNot() : ""} playing...
                 </h1>
                 <img className={pack.styles.logo} src={pack.image} alt={pack.name} />
-                <div className="flex flex-row flex-wrap gap-2 md:gap-4 mt-8 ml-8 md:ml-4 lg:ml-4">
+                <div className="flex flex-row flex-wrap gap-2 md:gap-4 mt-8 ml-8 md:ml-4 lg:ml-4 text-sm md:text-base">
                   {!pack.active ? <PillClosed /> : null}
                   <Pill label={`v${pack.version.modpack}`} />
                   {renderTags({ tags: pack.tags })}
