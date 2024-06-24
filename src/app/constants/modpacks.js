@@ -25,7 +25,7 @@ const modpacks = [
       loader: "Fabric",
       lastUpdated: "1st July 2024 at 10:00",
     },
-    tags: ["rpg", "shaders"],
+    tags: ["rpg", "create", "better combat", "ad astra", "quests", "shaders"],
   },
   {
     id: "steampunk",
@@ -54,14 +54,15 @@ const modpacks = [
       loader: "Forge",
       lastUpdated: "1st July 2024 at 10:00",
     },
-    tags: ["rpg", "shaders"],
+    tags: ["ad astra", "alex's mobs", "create", "end remastered", "immersive engineering", "shaders"],
   },
   {
     id: "atm9",
     sort: 3,
     name: "All The Mods 9 (ATM9)",
     image: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/atm9.png",
-    background: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/wall.jpg",
+    background:
+      "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/dooburt_steve_character_from_minecraft_staring_with_white_eye_9fc140f7-0a95-4640-9097-d7860ebccee5_0.png",
     hasVideoBack: false,
     title: "It's not called All The Mods for nothing...",
     description:
@@ -83,7 +84,7 @@ const modpacks = [
       loader: "Forge",
       lastUpdated: "1st July 2024 at 10:00",
     },
-    tags: ["rpg", "shaders"],
+    tags: ["ae2", "ad astra", "ars elemental", "ars nouveau", "create", "immersive engineering"],
   },
   {
     id: "bettermc",
@@ -92,7 +93,7 @@ const modpacks = [
     url: "/modpacks/bettermc",
     title: "Breathe life into your blocky universe...",
     image: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/better-minecraft.png",
-    background: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/wall.jpg",
+    background: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/Better_Minecraft_FABRIC_1.19.2_03_06_2024_12_56_47.png",
     hasVideoBack: false,
     buttonLabel: "Don't play vanilla, play this",
     description:
@@ -103,12 +104,12 @@ const modpacks = [
     },
     version: {
       minecraft: "1.20.1",
-      modpack: "9-0.2.60",
+      modpack: "20",
       loaderVersion: "47.2.20",
       loader: "Forge",
       lastUpdated: "1st July 2024 at 10:00",
     },
-    tags: ["rpg", "shaders"],
+    tags: ["vanilla+", "adventurez", "waystones", "xaero", "dragons", "shaders"],
   },
   {
     id: "ciscos-rpg-adventure",
@@ -117,23 +118,23 @@ const modpacks = [
     url: "/modpacks/ciscos-rpg-adventure",
     title: "Tough challenges, exciting loot and deep RPG mechanics await...",
     image: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/ciscos-logo.png",
-    background: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/wall.jpg",
+    background: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/cave.jpg",
     hasVideoBack: false,
     buttonLabel: "Onward!",
     description:
       "Overhaul your Minecraft experience with Cisco's RPG Adventure. Hundreds of new structures and dungeons need exploring, enemies need fighting and custom weapons need crafting. Are you up to the challenge?",
     styles: {
-      link: "justify-center shadow-md bg-gray-800 text-white border-0 focus:outline-none hover:bg-gray-900 rounded text-2xl mt-8 lg:inline-flex relative block p-4",
+      link: "justify-center shadow-md bg-purple-800 text-white border-0 focus:outline-none hover:bg-purple-900 rounded text-2xl mt-8 lg:inline-flex relative block p-4",
       logo: "w-full lg:w-[550px] xl:w-[650px] mx-auto md:mx-0",
     },
     version: {
-      minecraft: "1.20.1",
-      modpack: "9-0.2.60",
+      minecraft: "1.19.2",
+      modpack: "4d",
       loaderVersion: "47.2.20",
       loader: "Forge",
       lastUpdated: "1st July 2024 at 10:00",
     },
-    tags: ["rpg", "shaders"],
+    tags: ["apotheosis", "better combat", "ars nouveau", "end remastered", "yung's"],
   },
   {
     id: "cobblemon",
@@ -158,7 +159,7 @@ const modpacks = [
       loader: "Forge",
       lastUpdated: "1st July 2024 at 10:00",
     },
-    tags: ["rpg", "shaders"],
+    tags: ["pokemon"],
   },
   {
     id: "dawncraft",
@@ -185,7 +186,7 @@ const modpacks = [
       loader: "Forge",
       lastUpdated: "1st July 2024 at 10:00",
     },
-    tags: ["rpg", "shaders"],
+    tags: ["rpg"],
   },
 ];
 
