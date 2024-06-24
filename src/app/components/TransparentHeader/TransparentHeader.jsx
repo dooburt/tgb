@@ -9,7 +9,7 @@ const TransparentHeader = () => {
     <>
       <Hamburger />
       <header className="font-body absolute z-30 w-full text-xl text-gray-600">
-        <div className="md:max-w-[360px] ml-24 mt-2">
+        <div className="w-[330px] md:max-w-[360px] ml-24 mt-2">
           <a href="/">
             <Logo />
           </a>

@@ -3,6 +3,8 @@
 import Link from "next/link";
 import modpacks from "../../constants/modpacks";
 import { Carousel, IconButton } from "@material-tailwind/react";
+import Pill from "../Pill/Pill";
+import PillClosed from "../Pill/Closed";
 
 const Hero = () => {
   function comparitor(a, b) {
@@ -14,8 +16,8 @@ const Hero = () => {
       <div className="h-[100vh] w-full bg-slate-900">
         <div className="bg-gradient-to-b from-slate-900 to-transparent h-[150px] md:h-[120px] w-full absolute z-50"></div>
         <Carousel
-          autoplay
-          loop
+          // autoplay
+          // loop
           transition={{ duration: 0.5, type: "tween" }}
           navigation={({ setActiveIndex, activeIndex, length }) => (
             <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
@@ -45,13 +47,18 @@ const Hero = () => {
         >
           {modpacks.sort(comparitor).map((pack, index) => (
             <div className="relative h-full w-full" key={pack.id}>
-              <div className="absolute md:w-2/3 top-0 bottom-0 left-0 bg-gradient-to-r from-black to-transparent z-[11]">&nbsp;</div>
+              <div className="absolute w-2/3 top-0 bottom-0 left-0 bg-gradient-to-r from-black to-transparent z-[11]">&nbsp;</div>
               <div className="absolute w-full h-full z-10 right-0 top-0 left-0 bottom-0 bg-blue-gray-900 overflow-hidden">
                 <img className="object-cover h-full w-full blur-sm" src={pack.background} alt={pack.name} />
               </div>
-              <div className="absolute z-20 md:mt-8 lg:mt-[125px] px-32 lg:py-32 lg:w-3/4">
+              <div className="absolute z-20 mt-[150px] px-8 py-8 lg:mt-[125px] md:px-32 lg:py-32">
                 <img className={pack.styles.logo} src={pack.image} alt={pack.name} />
-                <div className="md:mt-8 lg:mt-16 w-1/2 pl-4 pr-4">
+                <div className="flex flex-row flex-wrap gap-4 mt-8 ml-4">
+                  {!pack.active ? <PillClosed /> : null}
+                  <Pill label={pack.version.modpack} />
+                </div>
+
+                <div className="mt-4 md:mt-4 lg:mt-8 pl-8 pr-8 md:pl-4 md:pr-4">
                   <h2 className="text-white font-header text-3xl pb-4 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">{pack.title || ""}</h2>
                   <p className="font-body leading-relaxed mx-auto text-gray-200 text-2xl shadow-sm drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
                     {pack.description}
@@ -59,7 +66,7 @@ const Hero = () => {
 
                   <Link className={pack.styles.link} href={pack.url}>
                     {/* <ShineHover label={pack.buttonLabel} /> */}
-                    <span className="font-body text-lg md:text-1xl lg:text-2xl p-4">{pack.buttonLabel}</span>
+                    <span className="font-body text-2xl p-4">{pack.buttonLabel}</span>
                   </Link>
                 </div>
               </div>

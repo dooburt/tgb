@@ -15,8 +15,8 @@ const modpacks = [
     moderators: ["@dooburt", "@FarrinOrbs", "@the_HSC"],
     download: "https://www.curseforge.com/minecraft/modpacks/prominence-2-rpg",
     styles: {
-      link: "font-body justify-center shadow-md bg-purple-800 text-white border-0 overflow-hidden focus:outline-none hover:bg-purple-500 rounded text-2xl mt-8 lg:inline-flex relative",
-      logo: "w-[250px] md:w-[330px] lg:w-[750px]",
+      link: "font-body justify-center shadow-md bg-purple-800 text-white border-0 overflow-hidden focus:outline-none hover:bg-purple-500 rounded mt-8 lg:inline-flex relative block p-4",
+      logo: "w-full lg:w-[550px] xl:w-[650px] mx-auto md:mx-0",
     },
     version: {
       minecraft: "1.20.1",
@@ -25,6 +25,7 @@ const modpacks = [
       loader: "Fabric",
       lastUpdated: "1st July 2024 at 10:00",
     },
+    tags: ["rpg", "shaders"],
   },
   {
     id: "steampunk",
@@ -43,8 +44,8 @@ const modpacks = [
     moderators: ["@the_HSC", "@FarrinOrbs"],
     download: "https://www.curseforge.com/minecraft/modpacks/steampunk",
     styles: {
-      link: "font-body justify-center shadow-md bg-orange-800 text-white border-0 focus:outline-none hover:bg-orange-500 rounded text-2xl mt-8 lg:inline-flex relative",
-      logo: "w-[250px] md:w-[330px] lg:w-[750px]",
+      link: "font-body justify-center shadow-md bg-orange-800 text-white border-0 focus:outline-none hover:bg-orange-500 rounded text-2xl mt-8 lg:inline-flex relative block p-4",
+      logo: "w-full lg:w-[550px] xl:w-[650px] mx-auto md:mx-0",
     },
     version: {
       minecraft: "1.19.2",
@@ -53,6 +54,7 @@ const modpacks = [
       loader: "Forge",
       lastUpdated: "1st July 2024 at 10:00",
     },
+    tags: ["rpg", "shaders"],
   },
   {
     id: "atm9",
@@ -71,8 +73,8 @@ const modpacks = [
     moderators: ["@dooburt", "@teew", "@FarrinOrbs"],
     download: "https://www.curseforge.com/minecraft/modpacks/all-the-mods-9",
     styles: {
-      link: "justify-center shadow-md bg-yellow-500 text-black border-0 focus:outline-none hover:bg-orange-800 rounded text-2xl mt-8 lg:inline-flex relative",
-      logo: "lg:w-[400px]",
+      link: "justify-center shadow-md bg-yellow-500 text-black border-0 focus:outline-none hover:bg-orange-800 rounded text-2xl mt-8 lg:inline-flex relative block p-4",
+      logo: "w-full w-[330px] lg:w-[400px] xl:w-[420px] mx-auto md:mx-0",
     },
     version: {
       minecraft: "1.20.1",
@@ -81,6 +83,7 @@ const modpacks = [
       loader: "Forge",
       lastUpdated: "1st July 2024 at 10:00",
     },
+    tags: ["rpg", "shaders"],
   },
   {
     id: "bettermc",
@@ -91,12 +94,12 @@ const modpacks = [
     image: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/better-minecraft.png",
     background: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/wall.jpg",
     hasVideoBack: false,
-    buttonLabel: "Don't play vanilla, play this...",
+    buttonLabel: "Don't play vanilla, play this",
     description:
       "Elevate your vanilla Minecraft experience with Better Minecraft (BMC1 for 1.19.2) with overhauled world gen, over 100 quests, 5 new dimensions and new bosses and foes from AdventureZ and Bosses of Mass Destruction.",
     styles: {
-      link: "justify-center shadow-md bg-purple-400 text-white border-0 focus:outline-none hover:bg-purple-800 rounded text-2xl mt-8 lg:inline-flex relative",
-      logo: "w-[250px] md:w-[330px] lg:w-[750px]",
+      link: "justify-center shadow-md bg-purple-400 text-white border-0 focus:outline-none hover:bg-purple-800 rounded text-2xl mt-8 lg:inline-flex relative block p-4",
+      logo: "w-full lg:w-[550px] xl:w-[650px] mx-auto md:mx-0",
     },
     version: {
       minecraft: "1.20.1",
@@ -105,6 +108,7 @@ const modpacks = [
       loader: "Forge",
       lastUpdated: "1st July 2024 at 10:00",
     },
+    tags: ["rpg", "shaders"],
   },
   {
     id: "ciscos-rpg-adventure",
@@ -119,8 +123,8 @@ const modpacks = [
     description:
       "Overhaul your Minecraft experience with Cisco's RPG Adventure. Hundreds of new structures and dungeons need exploring, enemies need fighting and custom weapons need crafting. Are you up to the challenge?",
     styles: {
-      link: "justify-center shadow-md bg-gray-800 text-white border-0 focus:outline-none hover:bg-gray-900 rounded text-2xl mt-8 lg:inline-flex relative",
-      logo: "w-[250px] md:w-[330px] lg:w-[750px]",
+      link: "justify-center shadow-md bg-gray-800 text-white border-0 focus:outline-none hover:bg-gray-900 rounded text-2xl mt-8 lg:inline-flex relative block p-4",
+      logo: "w-full lg:w-[550px] xl:w-[650px] mx-auto md:mx-0",
     },
     version: {
       minecraft: "1.20.1",
@@ -129,6 +133,7 @@ const modpacks = [
       loader: "Forge",
       lastUpdated: "1st July 2024 at 10:00",
     },
+    tags: ["rpg", "shaders"],
   },
   {
     id: "cobblemon",
@@ -143,8 +148,8 @@ const modpacks = [
     description:
       "Capture Pokemon and expand your team, battling wild Pokemon to gain experience. Trade and battle with other players all whilst crafting your own world.",
     styles: {
-      link: "justify-center shadow-md bg-indigo-800 text-white border-0 focus:outline-none hover:bg-indigo-800 rounded text-2xl mt-8 lg:inline-flex relative",
-      logo: "w-[250px] md:w-[330px] lg:w-[750px]",
+      link: "justify-center shadow-md bg-indigo-800 text-white border-0 focus:outline-none hover:bg-indigo-800 rounded text-2xl mt-8 lg:inline-flex relative block p-4",
+      logo: "w-full lg:w-[550px] xl:w-[650px] mx-auto md:mx-0",
     },
     version: {
       minecraft: "1.20.1",
@@ -153,6 +158,7 @@ const modpacks = [
       loader: "Forge",
       lastUpdated: "1st July 2024 at 10:00",
     },
+    tags: ["rpg", "shaders"],
   },
   {
     id: "dawncraft",
@@ -169,8 +175,8 @@ const modpacks = [
     description:
       "Buckle-up buttercup, because in DawnCraft everything is monstrously difficult. The latest episode Echoes of Legends tasks you on a hardcore adventure that will require all your skills in combat, building and exploration. Dive into dungeons, battle dozens of bosses and complete a unique questline. Can you engineer your survival?",
     styles: {
-      link: "justify-center shadow-md bg-indigo-800 text-white border-0 focus:outline-none hover:bg-indigo-800 rounded text-2xl mt-8 lg:inline-flex relative",
-      logo: "w-[250px] md:w-[330px] lg:w-[480px]",
+      link: "justify-center shadow-md bg-indigo-800 text-white border-0 focus:outline-none hover:bg-indigo-800 rounded text-2xl mt-8 lg:inline-flex relative block p-4",
+      logo: "w-full lg:w-[550px] xl:w-[650px] mx-auto md:mx-0",
     },
     version: {
       minecraft: "1.20.1",
@@ -179,6 +185,7 @@ const modpacks = [
       loader: "Forge",
       lastUpdated: "1st July 2024 at 10:00",
     },
+    tags: ["rpg", "shaders"],
   },
 ];
 
