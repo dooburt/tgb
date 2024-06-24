@@ -93,7 +93,7 @@ const Hamburger = ({ styles = {}, classes = [], isOpen = false, children }) => {
           </div>
         </div>
 
-        <div className={classNames(["hamburger__shade max-w-[320px] md:max-w-[500px]", open ? "opened" : ""])}>
+        <div className={classNames(["font-body hamburger__shade max-w-[320px] md:max-w-[500px]", open ? "opened" : ""])}>
           <div className="hamburger__shade-inner"> </div>
           <div className="hamburger__menu-container">
             <div {...bind}>

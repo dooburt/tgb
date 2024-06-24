@@ -9,7 +9,8 @@ const Wallpaper = () => {
     <section className="bg-flat-grey relative flex h-screen min-h-[960px] w-full items-center justify-center overflow-hidden">
       <Image
         src={bg}
-        className="absolute z-10 ml-[650px] h-[100%] min-h-[960px] min-w-full max-w-none -translate-x-1/4 transform overflow-hidden md:ml-[350px] md:-translate-x-[8rem] lg:ml-0 lg:-translate-x-0 min-[2200px]:h-auto"
+        className="absolute z-10 h-[100%] min-h-[960px] object-cover min-w-full max-w-none overflow-hidden lg:ml-0 lg:-translate-x-0 min-[2200px]:h-auto"
+        fill="cover"
         alt="Picture of Minecraft Steve fighting through slimes"
       />
       <div className="absolute top-[70%] z-20 px-5 pt-0 md:top-[70%] md:w-auto lg:px-2">
