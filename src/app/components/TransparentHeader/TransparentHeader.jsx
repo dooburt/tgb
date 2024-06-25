@@ -3,6 +3,7 @@
 import React from "react";
 import Logo from "../Logo/Logo";
 import Hamburger from "../Hamburger/Hamburger";
+import ShineHover from "../ShineHover/ShineHover";
 
 const TransparentHeader = () => {
   return (
@@ -15,13 +16,14 @@ const TransparentHeader = () => {
               <Logo />
             </a>
           </div>
+
           <a
             href="https://discord.gg/MXmcyScFEZ"
             target="_blank"
             rel="noreferrer"
-            className="mt-4 hidden items-center rounded border-0 bg-[#1f162c] px-6 py-1 pb-2 text-2xl text-white hover:bg-indigo-800 focus:outline-none md:mt-8 lg:inline-flex"
+            className="mt-4 hidden overflow-hidden items-center rounded border-0 bg-white px-6 drop-shadow-md text-2xl text-purple-900 hover:bg-purple-900 hover:text-white hover:cursor-pointer focus:outline-none md:mt-2 lg:inline-flex"
           >
-            Join the adventure
+            <ShineHover label={`Join the adventure`} />
             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="ml-1 h-4 w-4" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>

@@ -9,6 +9,7 @@ const modpacks = [
     image: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/25cec6f9fb1a3b211df1ae0629e2af8c.png",
     background: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/catherdral.jpg",
     title: "Role play your way in readiness for Hasturian Era...",
+    hasVideoBack: false,
     description:
       "Prepare your equipment and your homestead; Hasturian Era is coming and we invite players who believe they have what it takes to survive to join the fray...",
     buttonLabel: "Into the breach...",

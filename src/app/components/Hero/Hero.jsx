@@ -5,6 +5,8 @@ import modpacks from "../../constants/modpacks";
 import { Carousel, IconButton } from "@material-tailwind/react";
 import Pill from "../Pill/Pill";
 import PillClosed from "../Pill/Closed";
+import Paper from "./Paper";
+import Video from "./Video";
 
 const Hero = () => {
   function comparitor(a, b) {
@@ -32,10 +34,9 @@ const Hero = () => {
   return (
     <>
       <div className="h-[100vh] min-h-[1000px] lg:min-h-[1150px] w-full bg-black">
-        <div className="bg-gradient-to-b from-slate-900 to-transparent h-[150px] md:h-[120px] w-full absolute z-50"></div>
         <Carousel
-          //autoplay
-          //loop
+          autoplay
+          loop
           transition={{ duration: 0.5, type: "tween" }}
           navigation={({ setActiveIndex, activeIndex, length }) => (
             <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
@@ -67,7 +68,8 @@ const Hero = () => {
             <div className="relative h-full w-full" key={pack.id}>
               <div className="absolute w-2/3 top-0 bottom-0 left-0 bg-gradient-to-r from-black to-transparent z-[11]">&nbsp;</div>
               <div className="absolute w-full h-full z-10 right-0 top-0 left-0 bottom-0 bg-blue-gray-900 overflow-hidden">
-                <img className="object-cover h-full w-full blur-sm" src={pack.background} alt={pack.name} />
+                {pack.hasVideoBack ? <Video src={pack.videoBackUrl} /> : <Paper background={pack.background} name={pack.name} />}
+                {/* <img className="object-cover h-full w-full blur-sm" src={pack.background} alt={pack.name} /> */}
               </div>
               <div className="absolute z-20 mt-[130px] px-8 py-8 lg:mt-[105px] md:px-32 lg:py-32">
                 <h1 className="text-white font-body text-base uppercase ml-4 pb-4 mb-4 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
