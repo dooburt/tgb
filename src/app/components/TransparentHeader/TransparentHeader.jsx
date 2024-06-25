@@ -4,6 +4,7 @@ import React from "react";
 import Logo from "../Logo/Logo";
 import Hamburger from "../Hamburger/Hamburger";
 import ShineHover from "../ShineHover/ShineHover";
+import { Avatar } from "@material-tailwind/react";
 
 const TransparentHeader = () => {
   return (

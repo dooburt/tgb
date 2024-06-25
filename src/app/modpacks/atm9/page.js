@@ -1,3 +1,3 @@
-export default function Page({ params, searchParams }) {
-  return <h1>My Page</h1>;
+export default function ATM9({ params, searchParams }) {
+  return <h1>ATM9</h1>;
 }
