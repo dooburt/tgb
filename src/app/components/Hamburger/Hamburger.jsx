@@ -69,7 +69,7 @@ const Hamburger = ({ styles = {}, classes = [], isOpen = false, children }) => {
     }, timeout);
   };
 
-  const EXIT_DELAY = 300;
+  const EXIT_DELAY = 200;
 
   return (
     <>
@@ -129,21 +129,20 @@ const Hamburger = ({ styles = {}, classes = [], isOpen = false, children }) => {
                       ⚔️ Our Modpacks
                     </span>
                   </li>
-
+                  <li className="px-8 py-1 md:py-2">
+                    <span
+                      className="text-pink-200 text-lg md:text-2xl hover:cursor-pointer hover:text-pink-500"
+                      onClick={() => exitHandler("/team", EXIT_DELAY)}
+                    >
+                      😎 Our Team
+                    </span>
+                  </li>
                   <li className="px-8 py-1 md:py-2">
                     <span
                       className="text-pink-200 text-lg md:text-2xl hover:cursor-pointer hover:text-pink-500"
                       onClick={() => exitHandler("/rules", EXIT_DELAY)}
                     >
                       📓 Rules
-                    </span>
-                  </li>
-                  <li className="px-8 py-1 md:py-2">
-                    <span
-                      className="text-pink-200 text-lg md:text-2xl hover:cursor-pointer hover:text-pink-500"
-                      onClick={() => exitHandler("/vote", EXIT_DELAY)}
-                    >
-                      👍 Vote
                     </span>
                   </li>
                   <li className="px-8 py-1 md:py-2">
