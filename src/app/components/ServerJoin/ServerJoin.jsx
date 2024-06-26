@@ -1,19 +1,30 @@
 "use client";
 
-const ServerJoin = (props) => {
+const ServerJoin = ({ server, pack, disabled }) => {
+  const renderDisabledScrim = () => {
+    return (
+      <>
+        <div className="absolute top-0 left-0 w-full h-full bg-black/85 z-10 flex justify-center items-center">
+          <span className="text-white text-2xl">😴 This server is closed (for now)</span>
+        </div>
+      </>
+    );
+  };
+
   return (
-    <section className="font-body bg-purple-900 text-gray-200">
-      <div className="container mx-auto flex flex-col items-center px-5 py-24 md:w-2/3 md:flex-row">
+    <section className="font-body bg-purple-900 text-gray-200 relative">
+      {disabled ? renderDisabledScrim() : null}
+      <div className={`container mx-auto flex flex-col items-center px-5 py-24 md:w-2/3 md:flex-row ${disabled ? "blur-sm" : null}`}>
         <div className="mb-6 flex w-full flex-col pr-0 text-center md:mb-0 md:w-auto md:pr-10 md:text-left">
-          <h2 className="text-1xl font-header mb-1 font-medium tracking-widest text-indigo-200">PLAY {props.pack}</h2>
+          <h2 className="text-1xl font-header mb-1 font-medium tracking-widest text-indigo-200">PLAY {pack}</h2>
           <h1 className="font-header mb-8 sm:text-lg md:text-2xl font-medium text-white lg:text-4xl">
             <span
               className="block underline hover:cursor-pointer"
               onClick={() => {
-                navigator.clipboard.writeText(props.server);
+                navigator.clipboard.writeText(server);
               }}
             >
-              {props.server}
+              {server}
             </span>
           </h1>
           <span className="text-sm text-purple-400">^ Click to copy the address</span>

@@ -2,10 +2,21 @@
 
 import creeper from "../../../../public/pink-creeper.png";
 
-const HowToInstallDawncraft = () => {
+const HowToInstallDawncraft = ({ disabled }) => {
+  const renderDisabledScrim = () => {
+    return (
+      <>
+        <div className="absolute top-0 left-0 w-full h-full bg-black/85 z-10 flex justify-center items-center">
+          <span className="text-white text-2xl">😴 This server is closed (for now)</span>
+        </div>
+      </>
+    );
+  };
+
   return (
-    <section className="font-body bg-blue-900 text-gray-600" id="get-started">
-      <div className="w-full py-32">
+    <section className="font-body bg-blue-900 text-gray-600 relative" id="get-started">
+      {disabled ? renderDisabledScrim() : null}
+      <div className={`w-full py-32 ${disabled ? "blur-sm" : null}`}>
         <section>
           <div className="mx-8 text-center">
             <div className="mb-8">

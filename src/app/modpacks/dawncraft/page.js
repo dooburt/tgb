@@ -40,8 +40,8 @@ export default function Dawncraft({ params, searchParams }) {
         </div>
       </section>
       <PictureSliceDawncraftSpawn />
-      <ServerJoin pack="DAWNCRAFT" server="dawncraft.thegreatbeyond.org:25503" />
-      <HowToInstallDawncraft />
+      <ServerJoin pack="DAWNCRAFT" server="dawncraft.thegreatbeyond.org:25503" disabled />
+      <HowToInstallDawncraft disabled />
       <DiscordInvite />
     </>
   );
