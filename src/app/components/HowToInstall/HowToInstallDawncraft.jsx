@@ -1,30 +1,32 @@
-import creeper from "../../assets/pink-creeper.png";
+"use client";
+
+import creeper from "../../../../public/pink-creeper.png";
 
 const HowToInstallDawncraft = () => {
   return (
-    <section className="body-font bg-orange-800 text-gray-600" id="get-started">
+    <section className="font-body bg-blue-900 text-gray-600" id="get-started">
       <div className="w-full py-32">
         <section>
           <div className="mx-8 text-center">
             <div className="mb-8">
               <img
-                src={creeper}
+                src={creeper.src}
                 alt="A pink creeper face from Minecraft"
                 title="What is The Great Beyond?"
                 className="tgb-logo w-20"
                 style={{ margin: "0 auto" }}
               />
             </div>
-            <h1 className="title-font mb-4 text-2xl md:text-4xl font-medium text-white">Get started</h1>
+            <h1 className="font-header mb-4 text-2xl md:text-4xl font-medium text-white">Get started</h1>
             <div className="mx-auto flex lg:w-3/4 xl:w-2/4">
               <h2 className="mr-8 text-2xl text-white md:text-4xl">1</h2>
               <p className="text-left text-lg leading-relaxed text-gray-200 md:text-2xl">
                 Join{" "}
-                <a href="https://discord.gg/MXmcyScFEZ" target="_blank" rel="noreferrer" className="text-[#7289da] underline hover:text-[#677dcd]">
+                <a href="https://discord.gg/MXmcyScFEZ" target="_blank" rel="noreferrer" className="text-blue-200 underline hover:text-blue-300">
                   Discord
                 </a>{" "}
-                if you haven't already. Other players can help you. The admin can help you. The admin for BetterMC is{" "}
-                <span className="text-purple-300">@SenZ0</span>.
+                if you haven't already. Other players can help you. The admin can help you. The admin for Dawncraft is{" "}
+                <span className="text-purple-200">@SenZ0</span> and <span className="text-purple-200">@Idiotoid</span>.
               </p>
             </div>
             <div className="mx-auto flex lg:w-3/4 xl:w-2/4">
@@ -45,7 +47,7 @@ const HowToInstallDawncraft = () => {
               <h2 className="mr-8 text-2xl text-white md:text-4xl">3</h2>
               <p className="text-left text-lg leading-relaxed text-gray-200 md:text-2xl">
                 Install the{" "}
-                <a href="https://www.curseforge.com/minecraft/modpacks/dawn-craft" target="_blank" rel="noreferrer" className="text-blue-400 underline">
+                <a href="https://www.curseforge.com/minecraft/modpacks/dawn-craft" target="_blank" rel="noreferrer" className="text-blue-200 underline">
                   DawnCraft
                 </a>{" "}
                 modpack.
@@ -61,8 +63,8 @@ const HowToInstallDawncraft = () => {
               <h2 className="mr-8 text-2xl text-white md:text-4xl">5</h2>
               <p className="text-left text-lg leading-relaxed text-gray-200 md:text-2xl">
                 When DawnCraft starts (and looks like the main Minecraft menu), hit Multiplayer and Add Server. Enter{" "}
-                <span className="text-purple-400 ">The Great Beyond</span> as your server name and{" "}
-                <span className="text-purple-400 ">dawncraft.thegreatbeyond.org:25503</span> in the address box. Connect!
+                <span className="text-blue-300 ">The Great Beyond</span> as your server name and{" "}
+                <span className="text-blue-300 ">dawncraft.thegreatbeyond.org:25503</span> in the address box. Connect!
               </p>
             </div>
             <div className="mx-auto flex lg:w-3/4 xl:w-2/4">
@@ -73,7 +75,7 @@ const HowToInstallDawncraft = () => {
                   DawnCraft wiki
                 </a>{" "}
                 for more information or ask in game or in the Dawncraft channel on our{" "}
-                <a href="https://discord.gg/MXmcyScFEZ" target="_blank" rel="noreferrer" className="text-[#7289da] underline hover:text-[#677dcd]">
+                <a href="https://discord.gg/MXmcyScFEZ" target="_blank" rel="noreferrer" className="text-blue-200 underline hover:text-blue-300">
                   Discord
                 </a>
                 .

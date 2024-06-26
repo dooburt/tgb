@@ -13,7 +13,7 @@ const modpacks = [
     description:
       "Prepare your equipment and your homestead; Hasturian Era is coming and we invite players who believe they have what it takes to survive to join the fray...",
     buttonLabel: "Into the breach...",
-    moderators: ["@dooburt", "@FarrinOrbs", "@the_HSC"],
+    moderators: ["dooburt", "FarrinOrbs", "the_HSC"],
     download: "https://www.curseforge.com/minecraft/modpacks/prominence-2-rpg",
     styles: {
       link: "font-body justify-center shadow-md bg-purple-800 text-white border-0 overflow-hidden focus:outline-none hover:bg-purple-500 rounded mt-8 lg:inline-flex relative block p-4",
@@ -42,7 +42,7 @@ const modpacks = [
     description:
       "Transform you Minecraft experience into a fanastical adventure filled with steam-powered creations, intricate gears and gigantic airships! Battle new bosses and explore new strongholds and fortresses.",
     buttonLabel: "Fire up your furnace!",
-    moderators: ["@the_HSC", "@FarrinOrbs"],
+    moderators: ["the_HSC", "FarrinOrbs"],
     download: "https://www.curseforge.com/minecraft/modpacks/steampunk",
     styles: {
       link: "font-body justify-center shadow-md bg-orange-800 text-white border-0 focus:outline-none hover:bg-orange-500 rounded text-2xl mt-8 lg:inline-flex relative block p-4",
@@ -72,7 +72,7 @@ const modpacks = [
     hidden: false,
     url: "/modpacks/atm9",
     buttonLabel: "Cram it in!",
-    moderators: ["@dooburt", "@teew", "@FarrinOrbs"],
+    moderators: ["dooburt", "teew", "FarrinOrbs"],
     download: "https://www.curseforge.com/minecraft/modpacks/all-the-mods-9",
     styles: {
       link: "justify-center shadow-md bg-yellow-500 text-black border-0 focus:outline-none hover:bg-orange-800 rounded text-2xl mt-8 lg:inline-flex relative block p-4",
@@ -97,6 +97,7 @@ const modpacks = [
     background: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/Better_Minecraft_FABRIC_1.19.2_03_06_2024_12_56_47.png",
     hasVideoBack: false,
     buttonLabel: "Don't play vanilla, play this",
+    moderators: ["Juan (Richy)"],
     description:
       "Elevate your vanilla Minecraft experience with Better Minecraft (BMC1 for 1.19.2) with overhauled world gen, over 100 quests, 5 new dimensions and new bosses and foes from AdventureZ and Bosses of Mass Destruction.",
     styles: {
@@ -122,6 +123,7 @@ const modpacks = [
     background: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/cave.jpg",
     hasVideoBack: false,
     buttonLabel: "Onward!",
+    moderators: ["SenZ0", "Idiotoid"],
     description:
       "Overhaul your Minecraft experience with Cisco's RPG Adventure. Hundreds of new structures and dungeons need exploring, enemies need fighting and custom weapons need crafting. Are you up to the challenge?",
     styles: {
@@ -147,6 +149,7 @@ const modpacks = [
     background: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/wall.jpg",
     hasVideoBack: false,
     buttonLabel: "Get your cobblemon on...",
+    moderators: ["Yattan"],
     description:
       "Capture Pokemon and expand your team, battling wild Pokemon to gain experience. Trade and battle with other players all whilst crafting your own world.",
     styles: {
@@ -174,6 +177,7 @@ const modpacks = [
     hasVideoBack: false,
     title: "Nothing comes easy in DawnCraft...",
     buttonLabel: "Revisit what was...",
+    moderators: ["SenZ0", "Idiotoid", "dooburt"],
     description:
       "Buckle-up buttercup, because in DawnCraft everything is monstrously difficult. The latest episode Echoes of Legends tasks you on a hardcore adventure that will require all your skills in combat, building and exploration. Dive into dungeons, battle dozens of bosses and complete a unique questline. Can you engineer your survival?",
     styles: {

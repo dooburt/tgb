@@ -75,7 +75,7 @@ export default function Team({ params, searchParams }) {
           />
           <StaffMember
             handle="dooburt"
-            discordId="177948910843592704"
+            discordId="162141863829176320"
             servers={["Prominence", "ATM9", "Dawncraft"]}
             image="https://thegreatbeyond.s3.eu-west-1.amazonaws.com/43dbf469674f40be49d3f3d25ab5ecfe.png"
           />
