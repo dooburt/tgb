@@ -21,7 +21,7 @@ const PictureSlice = (props) => {
 const PictureSliceFarrin = (props) => {
   return (
     <section
-      className="flex h-[220px] md:h-[550px] md:max-h-[550px] w-full max-w-full overflow-hidden relative object-cover bg-slate-800"
+      className="flex h-[220px] md:h-[650px] md:max-h-[650px] w-full max-w-full overflow-hidden relative object-cover bg-slate-800"
       style={{ backgroundImage: `url(${farrin.src})`, backgroundSize: "cover", backgroundPosition: "top center" }}
     >
       <span> </span>

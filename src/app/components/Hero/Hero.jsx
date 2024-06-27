@@ -33,7 +33,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="h-[100vh] min-h-[1000px] lg:min-h-[1150px] w-full bg-black">
+      <div className="h-[100vh] min-h-[1000px] lg:min-h-[1200px] w-full bg-black overflow-hidden">
         <Carousel
           autoplay
           loop

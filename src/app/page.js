@@ -7,9 +7,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      {/* <Wallpaper /> */}
-      {/* <ModpacksCarousel /> */}
-      {/* <Packcards /> */}
       <Explanation />
       <ServerLocation />
       <PictureSliceCyberpunk />

@@ -9,10 +9,15 @@ import { useGesture } from "@use-gesture/react";
 
 import "./Hamburger.css";
 import Image from "next/image";
+import modpacks from "@/app/constants/modpacks";
 
 const Hamburger = ({ styles = {}, classes = [], isOpen = false, children }) => {
   const _styles = Object.assign({}, styles);
   const [open, setOpen] = useState(isOpen);
+
+  function comparitor(a, b) {
+    return a.sort - b.sort;
+  }
 
   const bind = useGesture(
     {
@@ -128,6 +133,20 @@ const Hamburger = ({ styles = {}, classes = [], isOpen = false, children }) => {
                     >
                       ⚔️ Our Modpacks
                     </span>
+                  </li>
+                  <li className="px-8 py-1 md:py-2">
+                    <ul className="mt-2 mb-2 w-[96%]">
+                      {modpacks.sort(comparitor).map((modpack, index) => (
+                        <li key={index} className="px-12 py-1 md:py-2">
+                          <span
+                            className="text-pink-100 text-lg md:text-2xl hover:cursor-pointer hover:text-pink-500"
+                            onClick={() => exitHandler(`${modpack.url}`, EXIT_DELAY)}
+                          >
+                            {modpack.name}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
                   </li>
                   <li className="px-8 py-1 md:py-2">
                     <span

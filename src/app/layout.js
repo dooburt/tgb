@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${outfit.variable} ${redHatDisplay.variable} debug-screens`}>
+      <body className={`${outfit.variable} ${redHatDisplay.variable} debug-screens bg-black`}>
         <TransparentHeader />
         {children}
         <Footer />

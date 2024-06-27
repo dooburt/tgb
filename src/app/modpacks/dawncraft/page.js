@@ -2,16 +2,17 @@
 
 import DiscordInvite from "../../components/DiscordInvite/DiscordInvite";
 import village from "../../../../public/stock/village.jpg";
-import PageHead from "../../components/PageHead/PageHead";
 import PageHeadWithLogo from "@/app/components/PageHead/PageHeadWithLogo";
 import { PictureSliceDawncraftSpawn } from "@/app/components/PictureSlice/PictureSlice";
 import ServerJoin from "@/app/components/ServerJoin/ServerJoin";
 import HowToInstallDawncraft from "@/app/components/HowToInstall/HowToInstallDawncraft";
+import HowToInstall from "@/app/components/HowToInstall/HowToInstall";
 
 export default function Dawncraft({ params, searchParams }) {
   return (
     <>
       <PageHeadWithLogo
+        packId="dawncraft"
         logo={"https://thegreatbeyond.s3.eu-west-1.amazonaws.com/dawncraft.png"}
         image={village}
         title="Dawncraft"
@@ -23,7 +24,12 @@ export default function Dawncraft({ params, searchParams }) {
         <div className="container mx-auto px-8 xl:px-0 xl:mx-auto">
           <p className="font-body py-8 text-base md:text-2xl leading-relaxed text-white">
             Enter the extraordinary world of{" "}
-            <a href="https://www.curseforge.com/minecraft/modpacks/dawn-craft" target="_blank" rel="noreferrer" className="text-orange-500">
+            <a
+              href="https://www.curseforge.com/minecraft/modpacks/dawn-craft"
+              target="_blank"
+              rel="noreferrer"
+              className="text-orange-500 hover:text-orange-600"
+            >
               DawnCraft
             </a>{" "}
             and really test your abilities against a harsh environment, brutal bosses and challenging quests and play through the new episode: Echoes of
@@ -41,7 +47,7 @@ export default function Dawncraft({ params, searchParams }) {
       </section>
       <PictureSliceDawncraftSpawn />
       <ServerJoin pack="DAWNCRAFT" server="dawncraft.thegreatbeyond.org:25503" disabled />
-      <HowToInstallDawncraft disabled />
+      <HowToInstall />
       <DiscordInvite />
     </>
   );

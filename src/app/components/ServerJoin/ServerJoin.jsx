@@ -16,7 +16,7 @@ const ServerJoin = ({ server, pack, disabled }) => {
       {disabled ? renderDisabledScrim() : null}
       <div className={`container mx-auto flex flex-col items-center px-5 py-24 md:w-2/3 md:flex-row ${disabled ? "blur-sm" : null}`}>
         <div className="mb-6 flex w-full flex-col pr-0 text-center md:mb-0 md:w-auto md:pr-10 md:text-left">
-          <h2 className="text-1xl font-header mb-1 font-medium tracking-widest text-indigo-200">PLAY {pack}</h2>
+          <h2 className="text-1xl font-header mb-1 font-medium tracking-widest text-indigo-200 uppercase">PLAY {pack}</h2>
           <h1 className="font-header mb-8 sm:text-lg md:text-2xl font-medium text-white lg:text-4xl">
             <span
               className="block underline hover:cursor-pointer"
