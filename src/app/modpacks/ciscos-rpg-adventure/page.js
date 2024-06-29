@@ -8,6 +8,7 @@ import ServerJoin from "@/app/components/ServerJoin/ServerJoin";
 import HowToInstall from "@/app/components/HowToInstall/HowToInstall";
 import PackScroller from "@/app/components/PackScroller/PackScroller";
 import modpacks from "@/app/constants/modpacks";
+import ServerStatus from "@/app/components/ServerStatus/ServerStatus";
 
 export default function Ciscos({ params, searchParams }) {
   const pack = modpacks.find((pack) => pack.id === "ciscos-rpg-adventure");
@@ -32,6 +33,7 @@ export default function Ciscos({ params, searchParams }) {
       <PictureSliceFarrin />
       <ServerJoin pack={pack.name} server={pack.join} />
       <HowToInstall packId={pack.id} />
+      <ServerStatus packId={pack.id} />
       <DiscordInvite />
     </>
   );

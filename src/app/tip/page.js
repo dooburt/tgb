@@ -4,11 +4,11 @@ import DiscordInvite from "../components/DiscordInvite/DiscordInvite";
 import zombie from "../../../public/stock/dooburt_httpss.mj.runM81V1YZVBB0_a_mangrove_in_minecraft_dark_6f3b9e07-8976-41ce-8cbf-763771feea19_0.png";
 import PageHead from "../components/PageHead/PageHead";
 
-export default function TheGreatBeyond({ params, searchParams }) {
+export default function Tip({ params, searchParams }) {
   return (
     <>
-      <PageHead image={zombie} title="The Great Beyond" subtitle="Why we're here" height={600} gradientFromClass="from-green-900" />
-      <section className="py-8 bg-green-900">
+      <PageHead image={zombie} title="Help out" subtitle="How you can help our community" height={600} gradientFromClass="from-pink-900" />
+      <section className="py-8 bg-pink-900">
         <div className="container px-8 xl:px-0 mx-auto">
           <p className="font-body py-8 text-base md:text-2xl leading-relaxed text-white">
             The Great Beyond is a community of modded-Minecraft servers ran by the players themselves. We run powerful, dedicated servers and host a mix of

@@ -93,6 +93,12 @@ const Footer = (props) => {
               </li>
 
               <li>
+                <a href="/team" className="cursor-pointer text-gray-200 hover:text-purple-300">
+                  The Great Beyondn't Team
+                </a>
+              </li>
+
+              <li>
                 <a href="/why-play-with-us" className="cursor-pointer text-gray-200 hover:text-purple-300">
                   Why Play with Us?
                 </a>
@@ -105,14 +111,8 @@ const Footer = (props) => {
               </li>
 
               <li>
-                <a href="/vote" className="cursor-pointer text-gray-200 hover:text-purple-300">
-                  Vote
-                </a>
-              </li>
-
-              <li>
                 <a href="/tip" className="cursor-pointer text-gray-200 hover:text-purple-300">
-                  Tip Jar &amp; Helping Out
+                  Help Out
                 </a>
               </li>
             </nav>
