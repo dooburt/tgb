@@ -24,8 +24,9 @@ export default function Prominence({ params, searchParams }) {
       />
       <PackScroller packId={pack.id} />
       <section className="py-8 bg-black">
-        <div className="container mx-auto px-8 xl:px-0 xl:mx-auto">
-          <p className="font-body py-8 text-base md:text-2xl leading-relaxed text-white">{pack.upsell}</p>
+        <div className="container mx-auto px-8 py-16 xl:px-0 xl:mx-auto">
+          <h2 className="font-header text-white text-3xl">Play Prominence II RPG</h2>
+          <p className="font-body pb-8 text-base md:text-2xl leading-relaxed text-white">{pack.upsell}</p>
         </div>
       </section>
       <PictureSliceFarrin />

@@ -5,10 +5,12 @@ import village from "../../../../public/stock/village.jpg";
 import PageHeadWithLogo from "@/app/components/PageHead/PageHeadWithLogo";
 import { PictureSliceDawncraftSpawn } from "@/app/components/PictureSlice/PictureSlice";
 import ServerJoin from "@/app/components/ServerJoin/ServerJoin";
-import HowToInstallDawncraft from "@/app/components/HowToInstall/HowToInstallDawncraft";
 import HowToInstall from "@/app/components/HowToInstall/HowToInstall";
+import modpacks from "@/app/constants/modpacks";
+import PackScroller from "@/app/components/PackScroller/PackScroller";
 
 export default function Dawncraft({ params, searchParams }) {
+  const pack = modpacks.find((pack) => pack.id === "dawncraft");
   return (
     <>
       <PageHeadWithLogo
@@ -20,9 +22,11 @@ export default function Dawncraft({ params, searchParams }) {
         height={800}
         gradientFromClass="from-indigo-900"
       />
+      <PackScroller packId={pack.id} bg="bg-indigo-900" linkColor="text-indigo-200" />
       <section className="py-8 bg-indigo-900">
-        <div className="container mx-auto px-8 xl:px-0 xl:mx-auto">
-          <p className="font-body py-8 text-base md:text-2xl leading-relaxed text-white">
+        <div className="container mx-auto px-8 py-16 xl:px-0 xl:mx-auto">
+          <h2 className="font-header text-white text-3xl">Play DawnCraft</h2>
+          <p className="font-body pb-8 text-base md:text-2xl leading-relaxed text-white">
             Enter the extraordinary world of{" "}
             <a
               href="https://www.curseforge.com/minecraft/modpacks/dawn-craft"

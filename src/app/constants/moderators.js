@@ -55,6 +55,13 @@ const moderators = [
     servers: ["Cobblemon"],
     avatar: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/a_b0f568a07f1a337e51acd7871c1e632c.gif",
   },
+  {
+    id: "LeonMelone",
+    sort: 30,
+    discordId: "295175736212455434",
+    servers: ["Cisco's"],
+    avatar: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/a6482dbcd9f1d8ad9ff353608e16fc76.png",
+  },
 ];
 
 export default moderators;

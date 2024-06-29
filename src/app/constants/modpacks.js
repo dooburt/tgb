@@ -105,6 +105,7 @@ const modpacks = [
     abbrev: "BMC",
     active: true,
     url: "/modpacks/bettermc",
+    join: "bettermc.thegreatbeyond.org:25565",
     title: "Breathe life into your blocky universe...",
     image: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/better-minecraft.png",
     background: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/Better_Minecraft_FABRIC_1.19.2_03_06_2024_12_56_47.png",
@@ -113,6 +114,8 @@ const modpacks = [
     moderators: ["Juan (Richy)"],
     description:
       "Elevate your vanilla Minecraft experience with Better Minecraft (BMC1 for 1.19.2) with overhauled world gen, over 100 quests, 5 new dimensions and new bosses and foes from AdventureZ and Bosses of Mass Destruction.",
+    upsell:
+      "Cram your Minecraft experience to bursting with All The Mods 9. With countless quests, challenging end-game and hundreds of new mods to explore, you can sink days into All The Mods and still only be exploring some of the depths of this pack. Come and explore the unseen and unloved mods, whilst you play with the mods we all love from other packs.",
     styles: {
       link: "justify-center shadow-md bg-purple-400 text-white border-0 focus:outline-none hover:bg-purple-800 rounded text-2xl mt-8 lg:inline-flex relative block p-4",
       logo: "w-full lg:w-[550px] xl:w-[650px] mx-auto md:mx-0",
@@ -138,9 +141,11 @@ const modpacks = [
     background: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/cave.jpg",
     hasVideoBack: false,
     buttonLabel: "Onward!",
-    moderators: ["SenZ0", "Idiotoid"],
+    moderators: ["SenZ0", "Idiotoid", "LeonMelone"],
     description:
       "Overhaul your Minecraft experience with Cisco's RPG Adventure. Hundreds of new structures and dungeons need exploring, enemies need fighting and custom weapons need crafting. Are you up to the challenge?",
+    upsell:
+      "Take your Minecraft RPG game to the next level with Cisco's RPG Adventure. Cisco takes you on a wild journey with new combat mechanics, expansive skill tree, custom weapons and enemies that level up with you. The further you travel from the safety of spawn, the more terrifying it will get. Can you stand the heat?",
     styles: {
       link: "justify-center shadow-md bg-purple-800 text-white border-0 focus:outline-none hover:bg-purple-900 rounded text-2xl mt-8 lg:inline-flex relative block p-4",
       logo: "w-full lg:w-[550px] xl:w-[650px] mx-auto md:mx-0",
@@ -169,6 +174,8 @@ const modpacks = [
     moderators: ["Yattan"],
     description:
       "Capture Pokemon and expand your team, battling wild Pokemon to gain experience. Trade and battle with other players all whilst crafting your own world.",
+    upsell:
+      "Capture Pokemon and expand your team, battling wild Pokemon to gain experience. Trade and battle with other players all whilst crafting your own world. Your Pokémon will follow you when sent out of their Poké Ball, and some small Pokémon can even ride on your shoulder! The wide array of immersive features, including Pokémon faint and sleeping animations, will help bring your world to life.",
     styles: {
       link: "justify-center shadow-md bg-indigo-800 text-white border-0 focus:outline-none hover:bg-indigo-800 rounded text-2xl mt-8 lg:inline-flex relative block p-4",
       logo: "w-full lg:w-[550px] xl:w-[650px] mx-auto md:mx-0",
