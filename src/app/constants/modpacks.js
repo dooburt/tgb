@@ -74,7 +74,7 @@ const modpacks = [
     abbrev: "ATM9",
     image: "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/atm9.png",
     status: "https://api.mcstatus.io/v2/status/java/atm9.thegreatbeyond.org",
-    join: "atm9.thegreatbeyond.org:25575",
+    join: "atm9.thegreatbeyond.org:25585",
     background:
       "https://thegreatbeyond.s3.eu-west-1.amazonaws.com/dooburt_steve_character_from_minecraft_staring_with_white_eye_9fc140f7-0a95-4640-9097-d7860ebccee5_0.png",
     hasVideoBack: false,
@@ -95,8 +95,8 @@ const modpacks = [
     },
     version: {
       minecraft: "1.20.1",
-      modpack: "9-0.2.60",
-      loaderVersion: "47.2.20",
+      modpack: "9-0.2.61",
+      loaderVersion: "1.20.1",
       loader: "Forge",
       lastUpdated: "1st July 2024 at 10:00",
     },

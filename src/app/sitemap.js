@@ -54,5 +54,35 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.5,
     },
+    {
+      url: "https://thegreatbeyond.com/team",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.3,
+    },
+    {
+      url: "https://thegreatbeyond.com/tip",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.3,
+    },
+    {
+      url: "https://thegreatbeyond.com/rules",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.3,
+    },
+    {
+      url: "https://thegreatbeyond.com/why-play-with-us",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.3,
+    },
+    {
+      url: "https://thegreatbeyond.com/the-great-beyond",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.3,
+    },
   ];
 }

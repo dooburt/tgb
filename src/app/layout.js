@@ -9,8 +9,8 @@ const redHatDisplay = Red_Hat_Display({ subsets: ["latin"], weight: "900", varia
 
 export const metadata = {
   title:
-    "The Great Beyond - Explore, build and conquer - We're playing modded Minecraft servers: Steampunk, Dawncraft, BetterMC, Prominence II RPG, Cisco's Adventure and Cobblemon!",
-  description: "A modded Minecraft community playing: Steampunk, Dawncraft, BetterMC, Prominence II RPG, Cisco's Adventure and Cobblemon!",
+    "The Great Beyond - Explore, build and conquer - We're playing modded Minecraft servers: Steampunk, Dawncraft, BetterMC, Prominence II RPG, Cisco's RPG Adventure and Cobblemon!",
+  description: "A modded Minecraft community playing: Steampunk, Dawncraft, BetterMC, Prominence II RPG, Cisco's RPG Adventure and Cobblemon!",
 };
 
 export default function RootLayout({ children }) {
