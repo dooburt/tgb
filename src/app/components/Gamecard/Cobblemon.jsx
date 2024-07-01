@@ -26,23 +26,12 @@ const GameCardCobblemon = () => {
                 <Pill label={`v${pack.version.modpack}`} />
               </div>
 
-              <p className="text-2xl leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-200 px-4">
-                Buckle-up buttercup, because in DawnCraft everything is monstrously difficult. The latest episode Echoes of Legends tasks you on a hardcore
-                adventure that will require all your skills in combat, building and exploration. Dive into dungeons, battle dozens of bosses and complete a
-                unique questline. Can you engineer your survival?
-              </p>
+              <p className="text-2xl leading-relaxed xl:w-3/4 lg:w-3/4 mx-auto text-gray-200 px-4">{pack.upsell}</p>
               <Link
-                className="flex mx-auto bg-[#51ce18] text-white border-0 py-4 pb-5 pl-20 px-8 focus:outline-none hover:bg-indigo-800 rounded text-2xl mt-16 lg:inline-flex relative"
-                href="/modpacks/atm9"
+                className="flex mx-auto bg-[#51ce18] text-white border-0 py-4 pb-5 px-8 focus:outline-none hover:bg-indigo-800 rounded text-2xl mt-16 lg:inline-flex relative"
+                href="/modpacks/cobblemon"
               >
-                <Image
-                  src={grass}
-                  alt="A Minecraft grass block emblem"
-                  title="Into the breach! Onto Dawncraft!"
-                  className="tgb-logo absolute w-20 -top-1.5 -left-6"
-                  style={{ margin: "0 auto" }}
-                />
-                <span className="text-lg md:text-1xl lg:text-2xl">Revisit what was...</span>
+                <span className="text-lg md:text-1xl lg:text-2xl">Get your cobble on...</span>
               </Link>
             </div>
           </div>
