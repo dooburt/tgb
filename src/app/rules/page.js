@@ -39,6 +39,7 @@ export default function Rules({ params, searchParams }) {
               </a>
               .
             </li>
+            <li className="mb-4 ml-8 text-base md:text-2xl text-white">Please join the Discord before playing our modpacks.</li>
           </ul>
           <h2 className="font-header text-white text-3xl mb-4">Discord</h2>
           <ul className="list-disc font-body">

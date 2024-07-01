@@ -21,7 +21,8 @@
     "node-fetch": "^3.3.2",
     "npm": "^10.8.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "eslint": "^8",

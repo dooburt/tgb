@@ -11,14 +11,6 @@ dayjs.extend(relativeTime);
 const ServerStatus = ({ packId = "prominence", bg = "bg-blue-800" }) => {
   const pack = modpacks.find((pack) => pack.id === packId);
 
-  if (!pack) return null;
-  if (!pack.active)
-    return (
-      <div className="w-full flex justify-center items-center">
-        <span>Server status isn't available. Check Discord for more information</span>
-      </div>
-    );
-
   let [loading, setLoading] = useState(true);
   let [serverData, setServerData] = useState(null);
   let [error, setError] = useState(null);
@@ -39,6 +31,14 @@ const ServerStatus = ({ packId = "prominence", bg = "bg-blue-800" }) => {
         setError(err);
       });
   }, 30000);
+
+  if (!pack) return null;
+  if (!pack.active)
+    return (
+      <div className="w-full flex justify-center items-center">
+        <span>Server status isn't available. Check Discord for more information</span>
+      </div>
+    );
 
   const renderLoading = () => {
     return (
@@ -97,9 +97,9 @@ const ServerStatus = ({ packId = "prominence", bg = "bg-blue-800" }) => {
         <h3 className="font-header text-lg">
           Adventurers ({serverData.players.online}/{serverData.players.max})
         </h3>
-        {serverData.players.list.map((player) => {
+        {serverData.players.list.map((player, index) => {
           return (
-            <div>
+            <div key={index}>
               <img src={`https://mc-heads.net/avatar/${player.uuid}/50`} alt={player.name_clean} className="w-[20px] h-[20px] -top-1 inline relative mr-2" />
               <span className="font-body text-lg">{player.name_clean}</span>
             </div>

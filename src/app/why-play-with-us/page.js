@@ -4,54 +4,35 @@ import DiscordInvite from "../components/DiscordInvite/DiscordInvite";
 import tgbspawn from "../../../public/stock/tgb-spawn.png";
 import PageHead from "../components/PageHead/PageHead";
 
-export default function TheGreatBeyond({ params, searchParams }) {
+export default function WhyPlayWithUs({ params, searchParams }) {
   return (
     <>
-      <PageHead image={tgbspawn} title="Why Play with Us" subtitle="Why we're here" height={600} gradientFromClass="from-yellow-900" />
+      <PageHead
+        image={tgbspawn}
+        title="Why Play with Us"
+        subtitle="Obviously because we're a bag of laughs?"
+        height={600}
+        gradientFromClass="from-yellow-900"
+      />
       <section className="py-8 bg-yellow-900">
         <div className="container px-8 xl:px-0 mx-auto">
-          <p className="font-body py-8 text-base md:text-2xl leading-relaxed text-white">
-            We want everyone to enjoy their time on The Great Beyond. We don't wish to squash creativity or fun. Beyond the walls of the spawn, the Great Beyond
-            is for you to explore and build within. However, we do ask that everyone who joins abides by the following:
-          </p>
-          <h2 className="font-header text-white text-3xl mb-4">Our game servers</h2>
+          <p className="font-body py-8 text-base md:text-2xl leading-relaxed text-white">If you need convincing to join us, consider:</p>
+
           <ul className="list-disc font-body">
             <li className="mb-4 ml-8 text-base md:text-2xl text-white">
-              Please do not grief other people's claims or builds. That means don't destroy or put blocks around a claim or build to intentionally make access,
-              viewing or expansion difficult.
-            </li>
-            <li className="mb-4 ml-8 text-base md:text-2xl text-white">Please do not use language that would offend within the chat.</li>
-            <li className="mb-4 ml-8 text-base md:text-2xl text-white">
-              Please do not claim more claim blocks than you need, please do not surround other people's claims with your own (griefing). Please do not place
-              your claim directly next to someone else's without some form of discussion/agreement with that person.
+              We play multiple modpacks, not from a single author or group of authors. From the mainstream to the obscure. From the large to the small. What
+              we're aiming for in our modpack selection is fun and playability.
             </li>
             <li className="mb-4 ml-8 text-base md:text-2xl text-white">
-              Please add to the general environment in the open world; be that buildings on roads, bridges or other builds to explore.
+              We play on powerful dedicated EU servers, which are available 24/7 and are not whitelisted. All we ask is you join us in Discord (even if you say
+              nothing there).
             </li>
             <li className="mb-4 ml-8 text-base md:text-2xl text-white">
-              We try our level best to not remove or ban anything from our modpacks, but each of our servers has a list of banned items (if necessary). You can
-              view the updated list for each server here:{" "}
-              <a
-                href="https://discordapp.com/channels/1200829322425024643/1227301131269439550"
-                className="bg-indigo-900 text-indigo-100 hover:text-white hover:bg-indigo-700 px-1 rounded-md"
-              >
-                #😵-banned-item-list
-              </a>
-              .
+              Our players (and even our team members) are dedicated, knowledgeable players and are here to have fun also. Our team members are a little older
+              (ha!) and that means we do at least tend to not have any drama or nonsense.
             </li>
-          </ul>
-          <h2 className="font-header text-white text-3xl mb-4">Discord</h2>
-          <ul className="list-disc font-body">
-            <li className="mb-4 ml-8 text-base md:text-2xl text-white">Let's keep spam, swearing and general shit-housery to a minimum.</li>
-            <li className="mb-4 ml-8 text-base md:text-2xl text-white">
-              No NSFW emojis, images, language or just stuff. Some people here are younger and their eyes don't need that stuff.
-            </li>
-            <li className="mb-4 ml-8 text-base md:text-2xl text-white">
-              No links to other MC servers running the same pack; because that typically means you aren't here to play on TGB, but just promote your own server.
-            </li>
-            <li className="mb-4 ml-8 text-base md:text-2xl text-white">
-              You can post images, gifs, videos, memes etc. as long as they aren't contravening the above rules.
-            </li>
+            <li className="mb-4 ml-8 text-base md:text-2xl text-white">We're a damned friendly bunch!</li>
+            <li className="mb-4 ml-8 text-base md:text-2xl text-white">We smell good.</li>
           </ul>
         </div>
       </section>

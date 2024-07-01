@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import img1 from "../../assets/images/2023-06-20_18.33.11.png";
 import img2 from "../../assets/images/2023-06-20_18.32.16.png";
@@ -91,9 +93,9 @@ const Gallery = () => {
       <Renderer />
       <div className="container mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 px-8 py-8">
-          {images.map((image) => {
+          {images.map((image, index) => {
             return (
-              <div>
+              <div key={index}>
                 <img
                   className="h-auto max-w-full rounded-lg transition-opacity hover:cursor-pointer hover:opacity-80"
                   src={image.inject}
