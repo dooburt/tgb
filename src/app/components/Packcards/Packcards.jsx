@@ -1,13 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import classNames from "classnames";
-import dirt from "../../../../public/dirt.png";
-import grass from "../../../../public/grass.png";
 import modpacks from "../../constants/modpacks";
 import Link from "next/link";
-import ShineHover from "../ShineHover/ShineHover";
 
 //https://www.frontend.fyi/v/building-stripes-carousel-with-tailwind
 
