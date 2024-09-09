@@ -31,7 +31,7 @@ export default function Steampunk({ params, searchParams }) {
         </div>
       </section>
       <PictureSliceFarrin />
-      <ServerJoin pack={pack.name} server={pack.join} />
+      <ServerJoin pack={pack.name} server={pack.join} disabled={!pack.active} />
       <HowToInstall packId={pack.id} />
       <ServerStatus packId={pack.id} />
       <DiscordInvite />
